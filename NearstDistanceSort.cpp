@@ -28,11 +28,17 @@ void NearstDistanceSort(T A[],int n)
                 cout<<(i-j)*2;
                 break;
             }
-//处理类似013245的情况
     for(int i=0;i<n-1;i++)
-        if(Count[i]>Count[i+1])
-            swap(Count[i],Count[i+1]);
-        
+        for(int j=i+1;j<=Count[i];j++)
+            if(Count[j]<=i)
+            {
+                swap(Count[j],Count[i]);
+                cout<<(j-i)*2;
+                break;
+            }
+
+//处理类似013245的情况
+
     for(int i=0;i<n;i++)
         cout<<Count[i];
     cout<<endl;
