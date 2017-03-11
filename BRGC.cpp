@@ -98,7 +98,7 @@ int main()
 		for each (int bit in var)
 		{
 			cout << bit;
-			
+
 		}
 		cout << "\n";
 		count++;
@@ -106,5 +106,5 @@ int main()
 	cout <<"总位串数为："<< count<<endl;
 	system("pause");
 	return 0;
-	
+
 }
